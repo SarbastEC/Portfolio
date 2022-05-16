@@ -1,0 +1,7 @@
+.navigation {
+    background-color: var(--opacity-grey-bg);
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+}

@@ -1,0 +1,28 @@
+.languageToggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid var(--orange);
+    border-radius: 1.5rem;
+    padding: .3rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.swidish {
+    color: var(--orange);
+    margin-right: .5rem;
+}
+
+.english {
+    color: var(--orange);
+    margin-left: .5rem;
+}
+
+.toggleBtn {
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 100%;
+    background-color: var(--orange);
+    position: absolute;
+}

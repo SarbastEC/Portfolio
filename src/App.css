@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+} 
+
+:root {
+    --black-bg: #000000;
+    --dark-bg: #191919;
+    --light-bg: #e0e0e0;
+    --opacity-light-bg: #e0e0e027;
+    --white-bg: #ffffff;
+    --black-text: #000000;
+    --dark-text: #191919;
+    --light-text: #e0e0e0;
+    --white-text: #ffffff;
+    --opacity-grey-bg: #4a49499b;
+    --opacity-light-grey-bg: #b8b6b641;
+    --light-grey: #9a999934;
+    --orange: #d6a728;
+    --opacity-orange: #e3b1297e;
+    --light-orange: #fbf7ea;
+
+    --container-lg: 75%;
+    --container-md: 86%;
+    --container-sm: 90%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-size: 16;
+    font-family: poppins;
+    background-color: var(--light-bg);
+    line-height: 1.7;
+}
+

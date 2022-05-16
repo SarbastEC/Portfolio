@@ -1,0 +1,44 @@
+.form {
+    padding: 1rem;
+    border: 3px solid ;
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.formLabel{
+    margin-bottom: .5rem;
+}
+
+.formInput{
+    padding: .8rem;
+    border-radius: .2rem;
+}
+
+.btnWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.formBtn{
+    min-width: 200px;
+    padding: .7rem 1rem;
+    font-weight: bold;
+    background-color: var(--opacity-orange);
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.formBtn:hover {
+    transform: scale(1.1);
+    background-color: var(--orange);
+}
+

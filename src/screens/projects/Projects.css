@@ -1,0 +1,80 @@
+.projects {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.projectsContainer {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleWrap {
+    width: 100%;
+    border-bottom: 3px solid;
+    border-radius: .5rem;
+}
+
+.projectsContainer h2 {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+
+}
+
+.linkImg {
+    width: 200px;
+    height: 100%;
+}
+
+.cardsGroup {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    padding: .8rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img{
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.githubIcon {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.githubIcon:hover {
+    transform: scale(1.5);
+}
+
+@media (max-width: 1360px){
+    .projects {
+        height: 100%;
+    }
+}

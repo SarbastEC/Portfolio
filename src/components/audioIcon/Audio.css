@@ -1,0 +1,11 @@
+.audio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.audioIcon {
+    font-size: 3rem;
+    margin: 0 2rem;
+}
