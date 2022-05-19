@@ -17,7 +17,7 @@ const Projects = () => {
     <div className='projects' id='projects'>
       <div className="projectsContainer">
         <div className='titleWrap'>
-          <h2>MINA PROJEKT i GITHUB</h2>
+          <h3>MINA PROJEKT i GITHUB</h3>
           <img src={LinkImg} alt="" className='linkImg'/>
         </div>
         <div className="cardsGroup">
@@ -26,7 +26,7 @@ const Projects = () => {
           href="https://github.com/SarbastEC/Portfolio"
           >
             <img src={CvReact} alt="" />
-            <h4>Portfolio i React</h4>
+            <p>Portfolio i React</p>
             <AiFillGithub className='githubIcon'/>
           </a>
           <a className="card" 
@@ -34,7 +34,7 @@ const Projects = () => {
           href="https://github.com/SarbastEC/JavaScript-3/tree/master/react-eCommerce/eCommerce-app"
           >
             <img src={EcommerceReact} alt="" />
-            <h4>e-Commerce webbsida i React</h4>
+            <p>e-Commerce webbsida i React</p>
             <AiFillGithub className='githubIcon'/>
           </a>
           <a className="card" 
@@ -42,7 +42,7 @@ const Projects = () => {
           href="https://github.com/SarbastEC/JavaScript-3/tree/master/react-eCommerce/eCommerce_db"
           >
             <img src={EcommerceMongoDb} alt="" />
-            <h4>e-Commerce database i node.js med med MongoDb</h4>
+            <p>e-Commerce database i node.js med med MongoDb</p>
             <AiFillGithub className='githubIcon'/>
           </a>
           <a className="card" 
@@ -50,7 +50,7 @@ const Projects = () => {
           href="https://github.com/SarbastEC/Javascript-2/tree/master/eCommerce-app"
           >
             <img src={EcommerceVue} alt="" />
-            <h4>e-Commerce webbsida i Vue</h4>
+            <p>e-Commerce webbsida i Vue</p>
             <AiFillGithub className='githubIcon'/>
           </a>
           <a className="card" 
@@ -58,7 +58,7 @@ const Projects = () => {
           href="https://github.com/SarbastEC/JavaScript-3/tree/master/angular-Digitalt%20CV"
           >
             <img src={CvAngular} alt="" />
-            <h4>Digitalt-CV i Angular</h4>
+            <p>Digitalt-CV i Angular</p>
             <AiFillGithub className='githubIcon'/>
           </a>
         </div>

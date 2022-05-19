@@ -6,7 +6,7 @@
     left: 50%;
     transform: translate(-50%);
     transition: transform 1s ease-out, visibility 1s;
-    bottom: 2rem;
+    bottom: 1rem;
     display: flex;
     margin: 0 auto;
     align-items: center;
@@ -15,11 +15,8 @@
 }
 
 .navLink {
-    font-size: 1.2rem;
     padding: .8rem;
-    /* padding-bottom: 0rem; */
     cursor: pointer;
-    text-align: center;
 }
 
 .navLink:hover {
@@ -34,8 +31,7 @@
 }
 
 .navLink p {
-    font-size: .8rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .menu-icon {
@@ -46,7 +42,7 @@
     left: 50%;
     transform: translate(-50%);
     transition: transform 1s ease-out, visibility 1s;
-    bottom: 2rem;
+    bottom: 1rem;
     display: flex;
     margin: 0 auto;
     align-items: center;
@@ -62,15 +58,17 @@
     text-align: center;
 }
 
-@media (max-width: 420px){
-    
+@media (max-width: 540px){
     .navbar {
-        padding: 0 .5rem;
+        flex-direction: column;
+        width: 100%;
+        bottom: 0;
+        border-radius: 0;
+        padding: 1rem;
     }
 
     .navLink {
-        font-size: 1rem;
-        padding: .5rem;
+        padding: 1.2rem;
     }
 
 }

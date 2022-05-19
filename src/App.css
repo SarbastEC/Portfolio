@@ -20,12 +20,13 @@
     --dark-text: #191919;
     --light-text: #e0e0e0;
     --white-text: #ffffff;
-    --opacity-grey-bg: #4a49499b;
+    --opacity-grey-bg: #4a4949c8;
     --opacity-light-grey-bg: #b8b6b641;
     --light-grey: #9a999934;
     --orange: #d6a728;
-    --opacity-orange: #e3b1297e;
-    --light-orange: #fbf7ea;
+    --opacity-orange: #e9d59fdf;
+    --opacity-orange-2: #e0ba51df;
+    --light-orange: #fbf9f4;
 
     --container-lg: 75%;
     --container-md: 86%;
@@ -47,3 +48,57 @@ body {
     line-height: 1.7;
 }
 
+h1 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+
+@media (max-width: 1140px){
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 420px){
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    p {
+        font-size: .9rem;
+    }
+
+}

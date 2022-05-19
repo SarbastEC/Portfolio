@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import './ContactForm.css';
-import {themeContext} from '../../context/themeContext';
-import { useContext } from 'react';
 import emailjs from '@emailjs/browser';
+import Btn from '../btn/Btn';
 
 
 const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
@@ -10,9 +9,8 @@ const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 
 const ContactForm = () => {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
 
+  const [btnTitle] = useState('SEND');
   const [toSend, setToSend] = useState({
     name: '',
     email: '',
@@ -49,10 +47,8 @@ const ContactForm = () => {
             <label className='formLabel' htmlFor="message">Message</label>
             <textarea className='formInput'  name='message' value={toSend.message} onChange={handleChange}/>
         </div>
-        <div className='btnWrap'>
-            <button className='formBtn' style={{color: darkMode? "var(--white-text)" : "var(--black-text)"}}>
-                SEND
-            </button>
+        <div className="btnDiv">
+          <Btn btnTitle={btnTitle}/>
         </div>
     </form>
   )

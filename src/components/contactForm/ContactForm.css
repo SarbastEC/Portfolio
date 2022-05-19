@@ -21,24 +21,6 @@
     border-radius: .2rem;
 }
 
-.btnWrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.btnDiv {
+    padding: 2rem 1rem;
 }
-
-.formBtn{
-    min-width: 200px;
-    padding: .7rem 1rem;
-    font-weight: bold;
-    background-color: var(--opacity-orange);
-    border-radius: .2rem;
-    cursor: pointer;
-}
-
-.formBtn:hover {
-    transform: scale(1.1);
-    background-color: var(--orange);
-}
-

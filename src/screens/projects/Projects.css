@@ -22,11 +22,9 @@
     border-radius: .5rem;
 }
 
-.projectsContainer h2 {
+.projectsContainer h3 {
     width: 100%;
     padding: 1rem;
-    font-size: 1.6rem;
-
 }
 
 .linkImg {

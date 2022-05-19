@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .contactContainer {
@@ -15,11 +15,14 @@
     margin: 0 auto;
 }
 
-.contactContainer h2 {
-    margin-bottom: 3rem;
+.contactContainer h3 {
+    margin-bottom: 1rem;
     text-align: center;
     width: 100%;
-    padding: .5rem;
+    padding: 1rem;
+    border: 3px solid;
+    border-bottom: none;
+    border-radius: .5rem;
 }
 
 .contactMain {
@@ -37,6 +40,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    border-left: 3px solid;
+    border-bottom: 3px solid;
+    border-radius: .5rem;
 }
 
 .contactInfo {
@@ -50,12 +56,12 @@
 .infoItem {
     display: flex;
     align-items: center;
-    gap: .8rem;
+    gap: .7rem;
     margin-bottom: .6rem;
 }
 
 .infoIcon {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .contactImgWrap {
@@ -78,6 +84,12 @@
 }
 
 
+@media (max-width: 1320px){
+    .contact {
+        height: 100%;
+    }
+}
+
 @media (max-width: 1140px){
     .contactInfo {
         flex-direction: column;
@@ -86,13 +98,20 @@
 }
 
 @media (max-width: 992px){
-    .contact {
-        height: 100%;
-    }
-
     .contactMain {
         flex-direction: column;
         gap: 0;
+    }
+    
+    .contactLeft {
+        border-bottom: none;
+    }
+
+}
+
+@media (max-width: 300px){
+    .infoItem p{
+        font-size: .8rem;
     }
 
 }

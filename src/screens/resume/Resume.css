@@ -1,176 +1,25 @@
-/* .resume {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 0;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 100%;
-}
-
-.contentTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
-.educationTitle, .workTitle {
-    width: 50%;
-    height: 100%;
-    font-size: 1.8rem;
-    text-align: center;
-    padding: 1rem;
-    border: 3px solid var(--orange);
-    border-bottom: none;
-}
-
-.educationTitle {
-    border-radius: .5rem 0 0 .5rem;
-}
-
-.workTitle {
-    border-radius: 0 .5rem .5rem 0;
-}
-
-.contentBody {
-    width: 100%;
-    border: 3px solid var(--orange);
-    border-radius: .5rem;
-    border-top: none;
-    padding: 2rem;
-}
-
-.educationItem, .firstRow, .secondRow {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-    align-items: flex-start;
-    text-align: start;
-}
-
-.educationItem, .workItem {
-    margin-bottom: 3rem;
-    border-bottom: 3px solid var(--orange);
-}
-
-.educationItem {
-    padding-bottom: 1rem;
-}
-
-.firstRow, .secondRow {
-    margin-bottom: .8rem;
-}
-
-.flexedDiv {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.listPoint {
-    width: 1.2rem;
-    height: 1.2rem;
-    border-radius: 50%;
-    background-color: var(--orange);
-    margin-right: 1rem;
-}
-
-.educationItemTitle, .educationItemPeriod, .workItemPlace, .workItemPeriod, .workItemDesc {
-    font-size: 1rem;
-}
-
-.educationItemDesc, .workItemTitle {
-    font-size: 1.2rem;
-    color: var(--orange);
-    font-weight: 500;
-}
-
-
-@media (max-width: 992px){
-    .resume {
-        height: 100%;
-    }
-}
-
-@media (max-width: 768px){
-
-    .contentBody {
-        padding: 1rem;
-    }
-    
-    .educationTitle, .workTitle {
-        font-size: 1.3rem;
-        padding: .5rem;
-    }
-
-}
-
-
-@media (max-width: 576px){
-
-    .contentBody {
-        padding: .5rem;
-    }
-
-    .educationTitle, .workTitle {
-        font-size: 1.1rem;
-        padding: .4rem;
-    }
-
-    .educationItemTitle, .educationItemPeriod, .workItemPlace, .workItemPeriod, .workItemDesc {
-        font-size: .9rem;
-    }
-    
-    .educationItemDesc, .workItemTitle {
-        font-size: 1rem;
-    }
-} */
-
-
-
-
-
-
-
-
 .resume {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.resumeContent {
     width: 80%;
-    height: 100%;
+    margin: 0 auto;
 }
 
-.contentTitle {
+.contentTitles {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    /* margin-bottom: 2rem; */
 }
 
 .educationTitle, .workTitle {
-    width: 50%;
-    height: 100%;
-    font-size: 1.8rem;
+    flex: 1;
     text-align: center;
     padding: .5rem;
     border: 3px solid var(--orange);
@@ -202,12 +51,12 @@
     align-items: flex-start;
     text-align: start;
     border-bottom: 3px solid var(--orange);
-    padding: 1rem 0;
+    padding: .8rem 0;
 }
 
 
 .workItem {
-    padding: 1rem 0;
+    padding: .8rem 0;
     border-bottom: 3px solid var(--orange);
 }
 
@@ -226,66 +75,31 @@
 }
 
 .listPoint {
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 1.5rem;
+    height: 1.5rem;
     color: var(--orange);
-    /* border-radius: 50%; */
-    /* background-color: var(--orange); */
     margin-right: 1rem;
 }
 
-.educationItemTitle, .educationItemPeriod , .workItemPlace, .workItemPeriod, .workItemDesc{
-    font-size: 1rem;
-}
-
 .educationItemDesc, .workItemTitle{
-    font-size: 1.2rem;
     color: var(--orange);
     font-weight: 500;
 }
 
 
-@media (max-width: 992px){
+@media (max-width: 1320px){
     .resume {
         height: 100%;
     }
 }
 
-@media (max-width: 768px){
-    
-    .educationTitle, .workTitle {
-        font-size: 1.3rem;
-        padding: .5rem;
-    }
-
-}
-
-
-@media (max-width: 576px){
-
-    .contentBody {
-        padding: .5rem;
-    }
-
-    .educationTitle, .workTitle {
-        font-size: 1.1rem;
-        padding: .4rem;
-    }
-
-    .educationItemTitle, .educationItemPeriod, .workItemPlace, .workItemPeriod, .workItemDesc{
-        font-size: .9rem;
-    }
-    
-    .educationItemDesc, .workItemTitle {
+@media (max-width: 320px){
+    .resume h3 {
         font-size: 1rem;
     }
-}
 
-@media (max-width: 420px){
-    
-    .educationTitle, .workTitle {
-        font-size: 1rem;
-        padding: .3rem;
+    .resume p {
+        font-size: .8rem;
+        width: 80%;
     }
-
 }
