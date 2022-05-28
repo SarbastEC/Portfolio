@@ -1,16 +1,17 @@
 .home {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .headerContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem 0;
 }
 
 .header {
@@ -21,9 +22,8 @@
     margin: 0 auto;
 }
 
-.headerLeft {
+.headerLeft, .headerRight {
     flex: 1;
-    padding: 1rem 0;
 }
 
 .headerLeft h1 {
@@ -35,24 +35,37 @@
     border-bottom: 2px solid var(--orange);
 }
 
-.headerLeft p {
-    margin-bottom: 1rem;
+.headerLeft .btnWrap {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 .headerLeft a {
-    margin: 2rem 1rem;
+    width: 100%;
+    max-width: 200px;
+    padding: .5rem ;
+    font-size: .9rem;
+    font-weight: 500;
+    background-color: var(--opacity-orange-1);
+    border-radius: .2rem;
+    cursor: pointer;
+    text-align: center;
 }
 
-
-.headerRight {
-    flex: 1;
-    padding: 1rem 0;
+.headerLeft a:hover {
+    transform: scale(1.1);
+    background-color: var(--orange);
+    transition: all ease-in .2s;
 }
 
 .imgWrap {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0;
 }
 
 .profileImg {
@@ -62,27 +75,25 @@
 }
 
 @media (max-width: 1320px){
-    .home {
-        height: 100%;
-    }
-
     .profileImg {
         max-width: 60%;
     }
 }
 
-@media (max-width: 960px){
-    .home {
-        height: 100%;
-    }
 
+@media (max-width: 960px){
     .header {
         display: block;
     }
+
+    .headerLeft .btnWrap {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 768px){
-    
+ 
     .profileImg {
         max-width: 70%;
     }

@@ -3,8 +3,8 @@ import './Skills.css';
 import Vid from '../../assets/video/video-1.mp4';
 import {themeContext} from '../../context/themeContext';
 import { useContext } from 'react';
+import { mySkills } from './SkillsData';
 
-const skills = ['HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'VUE', 'ANGULAR', 'FIREBASE', 'MONGODB', 'ADOBEXD', 'FIGMA', 'BOOTSTRAP', 'Github'];
 
 const Skills = () => {
   const theme = useContext(themeContext);
@@ -17,7 +17,7 @@ const Skills = () => {
       <div className="content">
         <h3 style={{background: darkMode? "var(--black-bg)" : "var(--light-orange)"}}>FÄRDIGHETER</h3>
         <div className="skills-group">
-          {skills&&skills.map((skill, index) => (
+          {mySkills&&mySkills.map((skill, index) => (
             <div className="skill" style={{background: darkMode? "var(--black-bg)" : "var(--light-orange)"}} key={index}>
               <p>{skill}</p>
             </div>

@@ -1,19 +1,16 @@
 import React, {useState} from 'react';
 import './AudioToggle.css';
-import Music from '../../assets/Audio/music-1.mp3';
-import {SiAudiomack} from 'react-icons/si';
+import Music from '../../assets/Audio/music.mp3';
+import {GiMusicSpell} from 'react-icons/gi';
 
 const AudioToggle = () => {
   const [audio] = useState(new Audio(Music));
   const [isPlaying, setIsPlaying] = useState(false);
-  // const [styling, setStyling] = useState('stroke-2')
   const playPause = () => {
     if (isPlaying){
       audio.pause()
-      // setStyling('stroke-1')
     } else {
       audio.play()
-      // setStyling('stroke-2')
     }
     setIsPlaying(!isPlaying)
   }
@@ -22,15 +19,6 @@ const AudioToggle = () => {
       {
         isPlaying 
         ?
-        // <div className="loader" onClick={playPause}>
-        //   <span className={styling}></span>
-        //   <span className={styling}></span>
-        //   <span className={styling}></span>
-        //   <span className={styling}></span>
-        //   <span className={styling}></span>
-        //   <span className={styling}></span>
-        //   <span className={styling}></span>
-        // </div>
         <div className="loader" onClick={playPause}>
           <span className='stroke'></span>
           <span className='stroke'></span>
@@ -41,7 +29,7 @@ const AudioToggle = () => {
           <span className='stroke'></span>
         </div>
         :
-        <SiAudiomack className='audioIcon' onClick={playPause}/>
+        <GiMusicSpell className='audioIcon' onClick={playPause}/>
       }
     
     </div>

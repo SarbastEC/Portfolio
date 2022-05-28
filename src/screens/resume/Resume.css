@@ -1,14 +1,18 @@
 .resume {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .resumeContent {
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contentTitles {
@@ -16,15 +20,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 
 .educationTitle, .workTitle {
-    flex: 1;
-    text-align: center;
-    padding: .5rem;
-    border: 3px solid var(--orange);
-    border-bottom: none;
-    background-color: var(--opacity-light-bg);
+    width: 100%;
+    padding: 1rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: all ease-in .05s;
 }
 
 .educationTitle {
@@ -37,11 +43,7 @@
 
 .contentBody {
     width: 100%;
-    border-right: 3px solid var(--orange);
-    border-left: 3px solid var(--orange);
     border-radius: .5rem;
-    padding: 0 1rem;
-    background-color: var(--opacity-light-bg);
 }
 
 .educationItem {
@@ -50,14 +52,15 @@
     gap: 1rem;
     align-items: flex-start;
     text-align: start;
-    border-bottom: 3px solid var(--orange);
-    padding: .8rem 0;
+    padding: .8rem;
+    margin-bottom: .5rem;
+    background-color: var(--opacity-light-bg);
+    border-radius: .5rem;
 }
 
 
 .workItem {
-    padding: .8rem 0;
-    border-bottom: 3px solid var(--orange);
+    margin-bottom: .5rem;
 }
 
 .firstRow, .secondRow {
@@ -66,6 +69,13 @@
     gap: 1rem;
     align-items: flex-start;
     text-align: start;
+    background-color: var(--opacity-light-bg);
+    border-radius: .5rem;
+    padding: .8rem;
+}
+
+.secondRow {
+    padding-top: 0;
 }
 
 .flexedDiv {
@@ -86,10 +96,40 @@
     font-weight: 500;
 }
 
+.skolKurser {
+    margin-top: 2rem;
+}
 
-@media (max-width: 1320px){
-    .resume {
-        height: 100%;
+.skolKurserTitle {
+    font-weight: 600;
+}
+
+.skolKurseritems {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 1.1rem;
+    margin-top: 1rem;
+}
+
+.skolKurserItem {
+    padding: .8rem;
+    background-color: var(--opacity-light-bg);
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 960px){
+    .contentTitles {
+        flex-direction: column;
+    }
+
+    .educationTitle, .workTitle {
+        border-radius: .5rem;
     }
 }
 
@@ -102,4 +142,5 @@
         font-size: .8rem;
         width: 80%;
     }
+
 }

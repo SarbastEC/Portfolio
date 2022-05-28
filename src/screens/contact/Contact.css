@@ -1,9 +1,9 @@
 .contact {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .contactContainer {
@@ -20,7 +20,6 @@
     text-align: center;
     width: 100%;
     padding: 1rem;
-    border: 3px solid;
     border-bottom: none;
     border-radius: .5rem;
 }
@@ -38,26 +37,31 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    border-left: 3px solid;
-    border-bottom: 3px solid;
     border-radius: .5rem;
 }
 
 .contactInfo {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     margin: 3rem 0;
     color: var(--orange);
-    gap: 3rem;
 }
 
 .infoItem {
     display: flex;
+    padding: .6rem 1rem;
+}
+
+.infoLink {
+    display: flex;
     align-items: center;
     gap: .7rem;
-    margin-bottom: .6rem;
+    color: var(--orange);
+}
+
+.infoItem a{
+    color: var(--orange);
 }
 
 .infoIcon {
@@ -67,12 +71,14 @@
 .contactImgWrap {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .contactIImg {
-    max-width: 60%;
+    max-width: 50%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 .contactRight {
@@ -84,20 +90,12 @@
 }
 
 
-@media (max-width: 1320px){
-    .contact {
-        height: 100%;
-    }
-}
-
-@media (max-width: 1140px){
+@media (max-width: 960px){
     .contactInfo {
         flex-direction: column;
         gap: 0;
     }
-}
 
-@media (max-width: 992px){
     .contactMain {
         flex-direction: column;
         gap: 0;
@@ -105,6 +103,11 @@
     
     .contactLeft {
         border-bottom: none;
+    }
+
+    
+    .contactImgWrap {
+        justify-content: center;
     }
 
 }

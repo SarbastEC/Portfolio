@@ -14,7 +14,7 @@
     --black-bg: #000000;
     --dark-bg: #191919;
     --light-bg: #e0e0e0;
-    --opacity-light-bg: #e0e0e027;
+    --opacity-light-bg: #e0e0e03f;
     --white-bg: #ffffff;
     --black-text: #000000;
     --dark-text: #191919;
@@ -25,6 +25,7 @@
     --light-grey: #9a999934;
     --orange: #d6a728;
     --opacity-orange: #e9d59fdf;
+    --opacity-orange-1: #e0ba513c;
     --opacity-orange-2: #e0ba51df;
     --light-orange: #fbf9f4;
 
@@ -46,6 +47,13 @@ body {
     font-family: poppins;
     background-color: var(--light-bg);
     line-height: 1.7;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    box-shadow: 0 0 0 30px var(--white-bg) inset !important;
 }
 
 h1 {

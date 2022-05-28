@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import {Link} from 'react-scroll';
 import { GiHamburgerMenu  } from "react-icons/gi";
+import { IoMdCloseCircle  } from "react-icons/io";
 import {themeContext} from '../../context/themeContext';
 import { useContext } from 'react';
 
@@ -32,7 +33,7 @@ const Navbar = ({isOpen, toggle}) => {
         offset={0}
         onClick={toggle}
         >
-          <p>Home</p>
+          <p>Profil</p>
         </Link>
 
         <Link to='skills'
@@ -47,7 +48,7 @@ const Navbar = ({isOpen, toggle}) => {
         offset={0}
         onClick={toggle}
         >
-          <p>Skills</p>
+          <p>Färdigheter</p>
         </Link>
 
         <Link to='reusme' 
@@ -77,7 +78,7 @@ const Navbar = ({isOpen, toggle}) => {
         offset={0}
         onClick={toggle}
         >
-          <p>Projects</p>
+          <p>Projekt</p>
         </Link>
 
         <Link to='contact' 
@@ -92,9 +93,18 @@ const Navbar = ({isOpen, toggle}) => {
         offset={0}
         onClick={toggle}
         >
-          <p>Contact</p>
+          <p>Kontakt</p>
         </Link>
 
+        <div 
+        style={{
+          color: darkMode? "var(--orange)" : "var(--black-text)"
+        }}
+        className='closeWrap' 
+        onClick={toggle}
+        >
+          <IoMdCloseCircle/>
+        </div>
       </nav>
       : 
       <div className="menu-icon"
