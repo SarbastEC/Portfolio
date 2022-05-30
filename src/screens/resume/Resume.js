@@ -16,7 +16,7 @@ const Resume = () => {
         <div className="contentTitles">
           <h3 className='educationTitle'
           style={{
-            background: activeContentBody ? "var(--orange)" : "var(--opacity-light-bg)",
+            background: activeContentBody ? "var(--orange)" : "",
             cursor: activeContentBody ? "" : "pointer",
           }}
           onClick={() => setActiveContentBody(true)}
@@ -28,7 +28,7 @@ const Resume = () => {
           </h3>
           <h3 className='workTitle'
           style={{
-            background: activeContentBody ? "var(--opacity-light-bg)" : "var(--orange)",
+            background: activeContentBody ? "" : "var(--orange)",
             cursor: activeContentBody ? "pointer" : "",
           }}
           onClick={() => setActiveContentBody(false)}

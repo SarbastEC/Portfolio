@@ -31,6 +31,7 @@
     align-items: center;
     gap: 1rem;
     transition: all ease-in .05s;
+    border: 2px solid var(--orange);
 }
 
 .educationTitle {
@@ -44,6 +45,7 @@
 .contentBody {
     width: 100%;
     border-radius: .5rem;
+    min-height: 525px;
 }
 
 .educationItem {
